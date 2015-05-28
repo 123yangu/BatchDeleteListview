@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whole_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="top"
+        android:layout_weight="0"
+        android:background="@color/lightblue" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="批量删除"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:gravity="center"
+            android:text="全部选中"
+            android:textSize="17dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.ccy.swipemenulistview.SwipeMenuListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/clearColor"
+        android:divider="#C8C8C8"
+        android:dividerHeight="1dip"
+     />
+
+    <LinearLayout
+        android:id="@+id/empty_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="60dip"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/shoucang_nont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dip"
+            android:paddingBottom="15dip"
+            android:text="没狗了。"
+            android:textColor="@color/gainsboro"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/add_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="点击我，增加一些狗吧。"
+            android:textColor="@color/gainsboro"
+            android:textSize="23dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_delete_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="0"
+        android:background="@drawable/delete_rl_selector"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="25dip"
+            android:layout_marginTop="25dip"
+            android:background="@drawable/delete_iv_selector" />
+    </RelativeLayout>
+
+</LinearLayout>

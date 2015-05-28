@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="whole_bg">#f7f7f6</color> <!-- 整体背景 -->
+    <color name="clearColor">#00000000</color>
+    <color name="gainsboro">#DCDCDC</color> <!-- 淡灰 -->
+    <color name="lightblue">#ADD8E6</color> <!-- 亮蓝 -->
+    <color name="transparent">#00000000</color>
+    <color name="bottom_delete_bg">#F3F1EF</color>
+</resources>

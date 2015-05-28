@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="FavCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+    </style>
+
+</resources>
